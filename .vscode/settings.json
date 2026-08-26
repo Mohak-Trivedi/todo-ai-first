@@ -1,0 +1,52 @@
+{
+  "npm.scriptRunner": "vp",
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "oxc.disableNestedConfig": true,
+  "oxc.fmt.disableNestedConfig": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "explicit"
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#f69c55",
+    "activityBar.background": "#f69c55",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#067939",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "activityBarTop.activeBackground": "#f69c55",
+    "activityBarTop.background": "#f69c55",
+    "activityBarTop.foreground": "#15202b",
+    "activityBarTop.inactiveForeground": "#15202b99",
+    "commandCenter.border": "#15202b99",
+    "commandCenter.foreground": "#15202b",
+    "editorGroup.border": "#f69c55",
+    "sash.hoverBorder": "#f69c55",
+    "statusBar.background": "#f48024",
+    "statusBar.debuggingBackground": "#f48024",
+    "statusBar.debuggingForeground": "#15202b",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#da670b",
+    "statusBarItem.remoteBackground": "#86f9b9",
+    "statusBarItem.remoteForeground": "#15202b",
+    "tab.activeBorder": "#f69c55",
+    "titleBar.activeBackground": "#f48024",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#f4802499",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#f48024"
+}
