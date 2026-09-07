@@ -1,13 +1,23 @@
 import react, { reactCompilerPreset } from "@vitejs/plugin-react";
 import babel from "@rolldown/plugin-babel";
+import { fileURLToPath, URL } from "node:url";
 import { defineConfig, lazyPlugins } from "vite-plus";
 
 // https://vite.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+    },
+  },
   staged: {
     "*": "vp check --fix",
   },
   fmt: {},
+  test: {
+    environment: "jsdom",
+    setupFiles: ["src/vitest.setup.ts"],
+  },
   lint: {
     plugins: ["react", "typescript", "oxc"],
     rules: {
