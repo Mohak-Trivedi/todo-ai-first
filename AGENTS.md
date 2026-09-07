@@ -24,4 +24,24 @@ release. Add a tool name to select part of the graph. For example, run
 - [ ] Check if there are `vite.config.ts` tasks or `package.json` scripts necessary for validation, run via `vp run <script>`.
 - [ ] If setup, runtime, or package-manager behavior looks wrong, run `vp env doctor` and include its output when asking for help.
 
+## Commands
+
+- Dev server: `vp dev`
+- Check everything (format + lint + types): `vp check`
+- Auto-fix formatting: `vp fmt`
+- Run tests: `vp test`
+
+## Conventions
+
+- This project uses **Vite+** (`vp`) as the only toolchain. Do not add Prettier,
+  ESLint, or a separate test runner. Use `vp` for everything: deps, checks, tests,
+  build.
+- Organize by feature: a feature's code lives in `src/features/<name>/` and is imported
+  through its `index.ts` barrel (e.g. `@/features/tasks`). Shared UI goes in
+  `src/components/`, framework-agnostic helpers in `src/lib/`.
+- TypeScript is strict. No `any`; type every function parameter and return.
+- After any code change, run `vp check` and `vp test` and fix what they report
+  **before** considering the work done.
+- Never commit directly to `main`. Work on a feature branch.
+
 <!--VITE PLUS END-->
